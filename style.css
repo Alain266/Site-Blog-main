@@ -92,12 +92,20 @@ nav{
     justify-content: center; /* centre les éléments en ligne */
     justify-content: space-around; /* modifie la disposition des éléments */
     background-color: #000000; /* couleur de fond */
+    height: 50px;
 }
 
 nav a{
+    display: flex; /* affiche les éléments en ligne */
+    justify-content: center; /* centre les éléments en ligne */
+    justify-content: space-around; /* modifie la disposition des éléments */
+    margin: auto; /* centre le texte */
     text-decoration: none; /* retire le soulignement des liens */
-    color: #FFFFFF; /* couleur du texte */
+    color: #000000; /* couleur du texte */
     font-size: 25px; /* taille de la police */
+    background-color: rgba(255, 255, 255, 0.5); /* couleur de fond */
+    border-radius: 20px; /* angle de la bordure */
+    width: 200px
 }
 
 main{
@@ -121,7 +129,7 @@ article{
     width: 300px; /* largeur */
     height: 100px; /* hauteur */
     overflow-y: scroll; /* scrollbar */
-    scrollbar-color: rgba(14, 40, 177, 0.8) red; /* scrollbar couleur */
+    scrollbar-color: #000000; /* scrollbar couleur */
     scrollbar-width: thin; /* scrollbar largeur */
 }
   
@@ -148,7 +156,7 @@ article{
     text-align: center;
     grid-area: p1; /* grille template */
     overflow-y: scroll; /* scrollbar */
-    scrollbar-color: rgba(14, 40, 177, 0.8) #FFFFFF; /* scrollbar couleur */
+    scrollbar-color: #000000 #FFFFFF; /* scrollbar couleur */
     scrollbar-width: thin; /* scrollbar largeur */
     background-color: rgba(217, 217, 217, 1); /* couleur de fond */
     border-radius: 10%; /* angle de la bordure */
@@ -158,7 +166,7 @@ article{
     text-align: center;
     grid-area: p2; /* grille template */
     overflow-y: scroll; /* scrollbar */
-    scrollbar-color: rgba(14, 40, 177, 0.8) #FFFFFF; /* scrollbar couleur */
+    scrollbar-color: #000000 #FFFFFF; /* scrollbar couleur */
     scrollbar-width: thin; /* scrollbar largeur */
     background-color: rgba(217, 217, 217, 1); /* couleur de fond */
     border-radius: 10%; /* angle de la bordure */
@@ -183,7 +191,7 @@ article{
     text-align: center;
     grid-area: p4; /* grille template */
     overflow-y: scroll; /* scrollbar */
-    scrollbar-color: rgba(14, 40, 177, 0.8) #FFFFFF; /* scrollbar couleur */
+    scrollbar-color: #000000 #FFFFFF; /* scrollbar couleur */
     scrollbar-width: thin; /* scrollbar largeur */
     background-color: rgba(217, 217, 217, 1); /* couleur de fond */
     border-radius: 10%; /* angle de la bordure */
@@ -225,7 +233,6 @@ article{
     .p1 { 
         grid-area: p1;
         overflow-y: scroll; /* scrollbar */
-        scrollbar-color: rgba(14, 40, 177, 0.8) #FFFFFF; /* scrollbar couleur */
         scrollbar-width: thin; /* scrollbar largeur */
         background-color: rgba(217, 217, 217, 1); /* couleur de fond */
         border-radius: 5%; /* angle de la bordure */
@@ -234,7 +241,6 @@ article{
     .p2 { 
         grid-area: p3; /* grille template ici p2 passe en p3 */
         overflow-y: scroll; /* scrollbar */
-        scrollbar-color: rgba(14, 40, 177, 0.8) #FFFFFF; /* scrollbar couleur */
         scrollbar-width: thin; /* scrollbar largeur */
         background-color: rgba(217, 217, 217, 1); /* couleur de fond */
         border-radius: 5%; /* angle de la bordure */
@@ -252,7 +258,6 @@ article{
     .p4 { 
         grid-area: p4; 
         overflow-y: scroll; /* scrollbar */
-        scrollbar-color: rgba(14, 40, 177, 0.8) #FFFFFF; /* scrollbar couleur */
         scrollbar-width: thin; /* scrollbar largeur */
         background-color: rgba(217, 217, 217, 1); /* couleur de fond */
         border-radius: 5%; /* angle de la bordure */
