@@ -46,9 +46,45 @@ header{
 
 header h1{
     margin: auto; /* centre le texte */
-    padding: 25px; /* marge intérieure */
+    padding: 60px; /* marge intérieure */
     text-align: center; /* centre le texte */
-    font-size: 50px; /* taille de la police */
+    font-size: 100px; /* taille de la police */
+    font-weight: bold;
+}
+
+/* Animation du logo pour écran de plus de 1080px */
+@keyframes tourLogo { 
+    0% {
+        transform: translateX(-2000%); /* position de départ de la boucle */
+    }
+    100% {
+        transform: translateX(2000%); /* position de fin */
+    }
+}
+
+/* Animation du logo pour écran de moins de 1080px */
+@keyframes tourLogo2 { 
+    0% {
+        transform: translateX(-1000%); /* position de départ de la boucle */
+    }
+    100% {
+        transform: translateX(400%); /* position de fin */
+    }
+}    
+
+.logo{
+    position: absolute; /* position fixe */
+    top: 155px; /* tire vers le haut */
+    height: 100px; /* hauteur */
+    width: 100px; /* largeur */
+    animation: tourLogo 15s linear infinite; /* animation */
+}
+
+/* style si l'écran est plus petit que 1080px */
+@media screen and (max-width: 1080px) { 
+    .logo{
+        animation: tourLogo2 8s linear infinite; /* animation */
+    }
 }
 
 nav{
@@ -72,8 +108,8 @@ main{
 }
 
 main p{
-    margin: auto;
-    max-width: 1000px; /* largeur maximale */
+    margin: auto; /* centre le texte */
+    max-width: 1500px; /* largeur maximale */
 }
 
 article{
@@ -103,7 +139,13 @@ article{
 }
 
 /* début disposition de la grille */
+
+.p1 p, .p2 p, .p3 p, .p4 p, .p5 p{
+    font-size: 25px; /* taille de la police */
+}
+
 .p1{ 
+    text-align: center;
     grid-area: p1; /* grille template */
     overflow-y: scroll; /* scrollbar */
     scrollbar-color: rgba(14, 40, 177, 0.8) #FFFFFF; /* scrollbar couleur */
@@ -113,6 +155,7 @@ article{
 }
   
 .p2{
+    text-align: center;
     grid-area: p2; /* grille template */
     overflow-y: scroll; /* scrollbar */
     scrollbar-color: rgba(14, 40, 177, 0.8) #FFFFFF; /* scrollbar couleur */
@@ -120,14 +163,24 @@ article{
     background-color: rgba(217, 217, 217, 1); /* couleur de fond */
     border-radius: 10%; /* angle de la bordure */
 }
+
+#imagep2{
+    width: 250px; /* largeur */
+    height: 250px; /* hauteur */
+    border-radius: 5%; /* angle de la bordure */
+}
   
 .p3{
+    display: flex; /* affiche les éléments en ligne */
+    justify-content: center; /* centre les éléments en ligne */
+    align-items: center; /* centre les éléments en colonne */
     grid-area: p3; /* grille template */
-    background-color: rgba(217, 217, 217, 1); /* couleur de fond */
-    border: solid
+    background-color: rgb(0, 0, 0); /* couleur de fond */
+    border-radius: 5%; /* angle de la bordure */
 }
   
 .p4{ 
+    text-align: center;
     grid-area: p4; /* grille template */
     overflow-y: scroll; /* scrollbar */
     scrollbar-color: rgba(14, 40, 177, 0.8) #FFFFFF; /* scrollbar couleur */
@@ -137,13 +190,23 @@ article{
 }
   
 .p5{ 
+    display: flex; /* affiche les éléments en ligne */
+    justify-content: center; /* centre les éléments en ligne */
+    align-items: center; /* centre les éléments en colonne */
     grid-area: p5; /* grille template */
-    overflow-y: scroll; /* scrollbar */
-    scrollbar-color: rgba(14, 40, 177, 0.8) #FFFFFF; /* scrollbar couleur */
-    scrollbar-width: thin; /* scrollbar largeur */
-    background-color: rgba(217, 217, 217, 1); /* couleur de fond */
     border-radius: 10%; /* angle de la bordure */
 }
+
+#spotify{
+    box-sizing: border-box;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* largeur */
+    height: 100%; /* hauteur */
+}
+
 /* fin disposition de la grille */  
 
 /* style si l'écran est plus grand que 1080px */
@@ -169,7 +232,7 @@ article{
     }
     
     .p2 { 
-        grid-area: p2;
+        grid-area: p3; /* grille template ici p2 passe en p3 */
         overflow-y: scroll; /* scrollbar */
         scrollbar-color: rgba(14, 40, 177, 0.8) #FFFFFF; /* scrollbar couleur */
         scrollbar-width: thin; /* scrollbar largeur */
@@ -178,13 +241,16 @@ article{
     }
     
     .p3 { 
-        grid-area: p3;
-        background-color: rgba(217, 217, 217, 1); /* couleur de fond */
+        display: flex; /* affiche les éléments en ligne */
+        justify-content: center; /* centre les éléments en ligne */
+        align-items: center; /* centre les éléments en colonne */
+        grid-area: p2; /* grille template ici p3 passe en p2 */
+        background-color: #000000; /* couleur de fond */
         border-radius: 5%; /* angle de la bordure */
     }
     
     .p4 { 
-        grid-area: p4;
+        grid-area: p4; 
         overflow-y: scroll; /* scrollbar */
         scrollbar-color: rgba(14, 40, 177, 0.8) #FFFFFF; /* scrollbar couleur */
         scrollbar-width: thin; /* scrollbar largeur */
@@ -194,15 +260,11 @@ article{
     
     .p5 { 
         grid-area: p5;
-        overflow-y: scroll; /* scrollbar */
-        scrollbar-color: rgba(14, 40, 177, 0.8) #FFFFFF; /* scrollbar couleur */
-        scrollbar-width: thin; /* scrollbar largeur */
-        background-color: rgba(217, 217, 217, 1); /* couleur de fond */
         border-radius: 5%; /* angle de la bordure */
     }
     /* fin disposition de la grille */
 }
-  
+
 article div{
     width: 100%; /* largeur */
     height: 100%; /* hauteur */
