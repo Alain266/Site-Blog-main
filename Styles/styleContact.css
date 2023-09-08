@@ -1,0 +1,79 @@
+*{
+    font-family: 'Montserrat', sans-serif; /* police de caractères */
+}
+
+.loading-overlay {
+    position: fixed; /* position fixe */
+    top: 0; /* tire vers le haut */
+    left: 0; /* tire vers la gauche */
+    width: 100%; /* largeur */
+    height: 100%; /* hauteur */
+    background-color: #f794136c; /* Couleur de fond semi-transparente */
+    backdrop-filter: blur(5px); /* Effet de flou */
+    display: flex; /* Affiche les éléments en ligne */
+    justify-content: center; /* Centre les éléments en ligne */
+    align-items: center; /* Centre les éléments en colonne */
+    z-index: 9999; /* Assure que l'overlay est au-dessus du contenu */
+    transition: opacity 3s ease; /* Animation du chargement */
+}
+
+.loading-image {
+    margin: auto; /* centre le texte */
+    width: 250px; /* largeur */
+    height: 250px; /* hauteur */
+    background-image: url("/Images/logo.png"); /* Chemin vers votre image de chargement */
+    background-size: cover; /* Taille de l'image */
+    animation: spin 2s linear infinite; /* Animation du chargement */
+}
+
+@keyframes spin { /* Animation du chargement */
+    0% { 
+        transform: rotate(0deg); /* Rotation de 0 degrés */
+    }
+    100% {
+        transform: rotate(-360deg); /* Rotation de 360 degrés */
+    }
+}
+
+body{
+    margin: 0; /* retire les marges */
+    margin-bottom: 4em; /* marge intérieure du bas */
+}
+
+header{
+    background-color: rgba(14, 40, 177, 0.8); /* couleur de fond */
+}
+
+header h1{
+    margin: auto; /* centre le texte */
+    padding: 25px; /* marge intérieure */
+    text-align: center; /* centre le texte */
+    font-size: 50px; /* taille de la police */
+}
+
+nav{
+    display: flex; /* affiche les éléments en ligne */
+    justify-content: center; /* centre les éléments en ligne */
+    justify-content: space-around; /* modifie la disposition des éléments */
+    background-color: #000000; /* couleur de fond */
+}
+
+nav a{
+    text-decoration: none; /* retire le soulignement des liens */
+    color: #FFFFFF; /* couleur du texte */
+    font-size: 25px; /* taille de la police */
+}
+
+footer{
+    position: fixed; /* position fixe */
+    bottom: 0; /* retire le bas */
+    left: 0; /* retire le gauche */
+    width: 100%; /* largeur */
+    background-color: rgba(0, 0, 0, 1); /* couleur de fond */
+}
+
+footer p{
+    text-align: center; /* centre le texte */
+    font-size: 20px; /* taille de la police */
+    color: #FFFFFF; /* couleur du texte */
+}
