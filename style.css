@@ -102,7 +102,7 @@ nav a{
     margin: auto; /* centre le texte */
     text-decoration: none; /* retire le soulignement des liens */
     color: #000000; /* couleur du texte */
-    font-size: 25px; /* taille de la police */
+    font-size: 20px; /* taille de la police */
     background-color: rgba(255, 255, 255, 0.5); /* couleur de fond */
     border-radius: 20px; /* angle de la bordure */
     width: 200px
@@ -111,7 +111,7 @@ nav a{
 main{
     text-align: center; /* centre le texte */
     padding: 3em; /* marge intérieure */
-    font-size: 25px; /* taille de la police */
+    font-size: 20px; /* taille de la police */
     background-color: rgba(14, 40, 177, 0.3); /* couleur de fond */
 }
 
@@ -149,7 +149,7 @@ article{
 /* début disposition de la grille */
 
 .p1 p, .p2 p, .p3 p, .p4 p, .p5 p{
-    font-size: 25px; /* taille de la police */
+    font-size: 20px; /* taille de la police */
 }
 
 .p1{ 
@@ -286,6 +286,6 @@ footer{
 
 footer p{
     text-align: center; /* centre le texte */
-    font-size: 20px; /* taille de la police */
+    font-size: 15px; /* taille de la police */
     color: #FFFFFF; /* couleur du texte */
 }
