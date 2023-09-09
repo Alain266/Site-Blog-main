@@ -21,7 +21,7 @@
     margin: auto; /* centre le texte */
     width: 250px; /* largeur */
     height: 250px; /* hauteur */
-    background-image: url("/Images/logo.png"); /* Chemin vers votre image de chargement */
+    background-image: url("Images/logo.png"); /* Chemin vers votre image de chargement */
     background-size: cover; /* Taille de l'image */
     animation: spin 2s linear infinite; /* Animation du chargement */
 }
