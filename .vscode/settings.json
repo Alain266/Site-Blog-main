@@ -1,3 +1,5 @@
 {
-    "codeium.enableSearch": true
+    "codeium.enableSearch": true,
+    "editor.wordWrap": "on",
+    "chat.editor.wordWrap": "on"
 }
