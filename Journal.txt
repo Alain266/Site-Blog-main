@@ -1,0 +1,5 @@
+Weekend du 08/09/2023 :
+
+. Changement de la taille de la police générale -5px
+. Changement de la disposition des div quand la largeur de l'écran est inférieur à 1080px
+. Changement des couleurs (background lien nav)

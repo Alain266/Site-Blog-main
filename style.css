@@ -39,9 +39,10 @@ body{
     margin: 0; /* retire les marges */
     margin-bottom: 4em; /* marge intérieure du bas */
 }
-
-header{
-    background-color: rgba(14, 40, 177, 0.8); /* couleur de fond */
+  
+header {
+    background-color: rgb(14, 40, 177, 0.8); /* couleur de fond */
+    background-size: 200% 100%; /* Taille de l'image */
 }
 
 header h1{
@@ -130,7 +131,7 @@ main p{
 }
 
 article{
-    height: 800px; /* hauteur */
+    height: 1763px; /* hauteur */
     background-color: rgba(0, 0, 0, 0.8); /* couleur de fond */
 }
 
@@ -145,24 +146,34 @@ article{
 .container{ 
     padding: 25px; /* marge intérieure */
     display: grid; /* grille */
-    grid-template-columns: 1fr 1fr; /* largeur */
-    grid-template-rows: 1fr 1fr 1fr; /* hauteur */
+    grid-template-columns: 1fr; /* largeur */
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; /* hauteur */
     gap: 25px 25px; /* marge intérieure */
     grid-auto-flow: row; /* disposition des éléments */
     grid-template-areas: 
-      "p1 p2"
-      "p3 p3"
-      "p4 p5"; /* grille template */
+      "p1"
+      "p2"
+      "p3"
+      "p4"
+      "p5"; /* grille template */
 }
 
-/* début disposition de la grille */
+.p1, .p2, .p3, .p4{
+    border: 2px solid #000000; /* bordure */
+}
+
+.p5{
+    box-shadow: 0 0 10px #000000; /* effet de flou */
+}
 
 .p1 p, .p2 p, .p3 p, .p4 p, .p5 p{
     font-size: 20px; /* taille de la police */
 }
 
+/* début disposition de la grille */
 .p1{ 
-    text-align: center;
+    height: 350px; /* hauteur */
+    text-align: center; /* centre le texte */
     grid-area: p1; /* grille template */
     overflow-y: scroll; /* scrollbar */
     scrollbar-color: #000000 #FFFFFF; /* scrollbar couleur */
@@ -172,7 +183,8 @@ article{
 }
   
 .p2{
-    text-align: center;
+    height: 350px; /* hauteur */
+    text-align: center; /* centre le texte */
     grid-area: p2; /* grille template */
     overflow-y: scroll; /* scrollbar */
     scrollbar-color: #000000 #FFFFFF; /* scrollbar couleur */
@@ -185,9 +197,11 @@ article{
     width: 250px; /* largeur */
     height: 250px; /* hauteur */
     border-radius: 5%; /* angle de la bordure */
+    border: 2px solid #000000; /* bordure */
 }
   
 .p3{
+    height: 350px; /* hauteur */
     display: flex; /* affiche les éléments en ligne */
     justify-content: center; /* centre les éléments en ligne */
     align-items: center; /* centre les éléments en colonne */
@@ -197,7 +211,8 @@ article{
 }
   
 .p4{ 
-    text-align: center;
+    height: 350px; /* hauteur */
+    text-align: center; /* centre le texte */
     grid-area: p4; /* grille template */
     overflow-y: scroll; /* scrollbar */
     scrollbar-color: #000000 #FFFFFF; /* scrollbar couleur */
@@ -215,19 +230,24 @@ article{
 }
 
 #spotify{
-    box-sizing: border-box;
-    border-radius: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    box-sizing: border-box; /* marge intérieure */
+    border-radius: 10%; /* angle de la bordure */
+    display: flex;  /* affiche les éléments en ligne */
+    justify-content: center; /* centre les éléments en ligne */
+    align-items: center; /* centre les éléments en colonne */
     width: 100%; /* largeur */
     height: 100%; /* hauteur */
+    box-shadow: 0 0 10px #000000; /* effet de flou */
 }
 
 /* fin disposition de la grille */  
 
 /* style si l'écran est plus grand que 1080px */
 @media screen and (min-width: 1080px) { /* version pc */
+    article{
+        height: 800px; /* hauteur */
+    }
+
     .container {  display: grid; /* grille */
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; /* largeur */
         grid-template-rows: 1fr 1fr; /* hauteur */
@@ -240,6 +260,7 @@ article{
     
     /* début disposition de la grille */
     .p1 { 
+        height: auto;
         grid-area: p1;
         overflow-y: scroll; /* scrollbar */
         scrollbar-width: thin; /* scrollbar largeur */
@@ -248,6 +269,7 @@ article{
     }
     
     .p2 { 
+        height: auto;
         grid-area: p3; /* grille template ici p2 passe en p3 */
         overflow-y: scroll; /* scrollbar */
         scrollbar-width: thin; /* scrollbar largeur */
@@ -256,6 +278,7 @@ article{
     }
     
     .p3 { 
+        height: auto;
         display: flex; /* affiche les éléments en ligne */
         justify-content: center; /* centre les éléments en ligne */
         align-items: center; /* centre les éléments en colonne */
@@ -265,6 +288,7 @@ article{
     }
     
     .p4 { 
+        height: auto;
         grid-area: p4; 
         overflow-y: scroll; /* scrollbar */
         scrollbar-width: thin; /* scrollbar largeur */
@@ -273,6 +297,7 @@ article{
     }
     
     .p5 { 
+        height: auto;
         grid-area: p5;
         border-radius: 5%; /* angle de la bordure */
     }
@@ -294,6 +319,7 @@ footer{
 }
 
 footer p{
+    width: 100%; /* largeur */
     text-align: center; /* centre le texte */
     font-size: 15px; /* taille de la police */
     color: #FFFFFF; /* couleur du texte */
