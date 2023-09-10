@@ -52,6 +52,13 @@ header h1{
     font-weight: bold;
 }
 
+/* style si l'écran est plus petit que 1080px */
+@media screen and (max-width: 1080px) { 
+    header h1{
+        font-size: 70px; /* taille de la police */
+    }
+}
+
 /* Animation du logo pour écran de plus de 1080px */
 @keyframes tourLogo { 
     0% {
@@ -84,6 +91,8 @@ header h1{
 @media screen and (max-width: 1080px) { 
     .logo{
         animation: tourLogo2 8s linear infinite; /* animation */
+        position: absolute; /* position fixe */
+        top: 117px; /* tire vers le haut */
     }
 }
 
