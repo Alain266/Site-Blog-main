@@ -180,6 +180,7 @@ article{
     scrollbar-width: thin; /* scrollbar largeur */
     background-color: rgba(217, 217, 217, 1); /* couleur de fond */
     border-radius: 10%; /* angle de la bordure */
+    box-shadow: 0 0 10px #000000; /* effet de flou */
 }
   
 .p2{
@@ -191,6 +192,7 @@ article{
     scrollbar-width: thin; /* scrollbar largeur */
     background-color: rgba(217, 217, 217, 1); /* couleur de fond */
     border-radius: 10%; /* angle de la bordure */
+    box-shadow: 0 0 10px #000000; /* effet de flou */
 }
 
 #imagep2{
@@ -208,6 +210,7 @@ article{
     grid-area: p3; /* grille template */
     background-color: rgb(0, 0, 0); /* couleur de fond */
     border-radius: 5%; /* angle de la bordure */
+    box-shadow: 0 0 10px #000000; /* effet de flou */
 }
   
 .p4{ 
@@ -219,6 +222,7 @@ article{
     scrollbar-width: thin; /* scrollbar largeur */
     background-color: rgba(217, 217, 217, 1); /* couleur de fond */
     border-radius: 10%; /* angle de la bordure */
+    box-shadow: 0 0 10px #000000; /* effet de flou */
 }
   
 .p5{ 
@@ -235,7 +239,7 @@ article{
     display: flex;  /* affiche les éléments en ligne */
     justify-content: center; /* centre les éléments en ligne */
     align-items: center; /* centre les éléments en colonne */
-    width: max-content; /* largeur */
+    width: 100%; /* largeur */
     height: 100%; /* hauteur */
     box-shadow: 0 0 10px #000000; /* effet de flou */
 }
