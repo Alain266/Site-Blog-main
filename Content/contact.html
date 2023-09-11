@@ -1,34 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr"> <!-- Langage du site -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Site de location de vélo">
-    <meta name="keywords" content="location, vélo, location de vélo,">
-    <meta name="author" content="Alain">
-    <meta name="title" content="I-Bike">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/Styles/styleContact.css">
+    <meta charset="UTF-8"> <!-- Encodage du site -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Taille du site -->
+    <meta name="description" content="Site de location de vélo"> <!-- Description du site -->
+    <meta name="keywords" content="location, vélo, location de vélo,"> <!-- Mots-clefs du site -->
+    <meta name="author" content="Alain"> <!-- Auteur du site -->
+    <meta name="title" content="I-Bike"> <!-- Titre du site -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- Compatibilité avec les navigateurs -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Préchargement de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Préchargement de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> <!-- Police de caractères -->
+    <link rel="stylesheet" href="../Styles/styleContact.css"> <!-- Fichier CSS du site -->
     <script src="../script.js"></script> <!-- Fichier JavaScript du site -->
-    <title>I-Bike</title>
+    <title>I-Bike</title> <!-- Titre du site -->
 </head>
 <body>
     <div class="loading-overlay"> <!-- Overlay du chargement -->
         <div class="loading-image"></div> <!-- Image du chargement -->
     </div>
-    <header>
-        <h1>I-Bike</h1>
-        <nav>
-            <a href="../index.html">Accueil</a>
-            <a href="/Content/contact.html">Contact</a>
-            <a href="/Content/connexion.html">Connexion</a>
+    <header> <!-- Header du site -->
+        <h1>I-Bike <img class="logo" src="../Images/logo.png" alt="Logo de I-Bike"/> </h1> 
+        <nav> <!-- Navigation du site -->
+            <a href="../index.html">Accueil</a> 
+            <a href="../Content/contact.html">Contact</a> 
+            <a href="../Content/connexion.html">Connexion</a>
         </nav>
     </header>
-    <footer>
-        <p>Copyright &copy; 2023</p>
+    <main> <!-- Premiere partie du site -->
+        <p>Nous sommes ravis de vous entendre ! Si vous avez des questions, des commentaires ou si vous souhaitez simplement partager votre passion pour le cyclisme, n'hésitez pas à remplir le formulaire ci-dessous. Notre équipe dévouée est là pour vous aider.</p>
+    </main>
+    <article class="container"> <!-- Contenu du site -->
+        <form id="contactform" action="formulaire.php" method="post"> <!-- Formulaire du site -->
+            <fieldset> <!-- Entête du formulaire -->
+                <legend id="titreform">Formulaire de contact</legend> <!-- Titre du formulaire -->
+            </fieldset>
+            <fieldset>
+                <label for="nom">Nom :</label> <!-- Label du champ -->
+                <input type="text" name="nom" id="nom" required> <!-- Champ du formulaire -->
+            </fieldset>
+            <fieldset>
+                <label for="prenom">Prenom :</label> <!-- Label du champ -->
+                <input type="text" name="prenom" id="prenom" required> <!-- Champ du formulaire -->
+            </fieldset>
+            <fieldset>
+                <label for="email">Email :</label> <!-- Label du champ -->
+                <input type="email" name="email" id="email" required> <!-- Champ du formulaire -->
+            </fieldset>
+            <fieldset>
+                <label for="entreprise">Entreprise :</label> <!-- Label du champ -->
+                <input type="text" name="entreprise" id="entreprise"> <!-- Champ du formulaire -->
+            </fieldset>
+            <fieldset>
+                <label for="sujet">Sujet :</label> <!-- Label du champ -->
+                <input type="text" name="sujet" id="sujet"> <!-- Champ du formulaire -->
+            </fieldset>
+            <fieldset>
+                <label for="message">Message :</label> <!-- Label du champ -->
+                <textarea name="message" id="message" cols="50" rows="10"></textarea> <!-- Champ du formulaire -->   
+            </fieldset>
+        </form>
+        <button id ="buttonform" type="submit">Envoyer</button>    
+    </article>
+    <footer> <!-- Footer du site -->
+        <p>Copyright &copy; 2023</p> <!-- Copyright -->
     </footer>
 </body>
 </html>
