@@ -299,7 +299,7 @@ article{
     }
     
     .p5 { 
-        height: auto;
+        height: auto; /* hauteur */
         grid-area: p5;
         border-radius: 5%; /* angle de la bordure */
     }
