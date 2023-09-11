@@ -235,7 +235,7 @@ article{
     display: flex;  /* affiche les éléments en ligne */
     justify-content: center; /* centre les éléments en ligne */
     align-items: center; /* centre les éléments en colonne */
-    width: 100%; /* largeur */
+    width: max-content; /* largeur */
     height: 100%; /* hauteur */
     box-shadow: 0 0 10px #000000; /* effet de flou */
 }
@@ -255,7 +255,7 @@ article{
         grid-auto-flow: row; /* disposition des éléments */
         grid-template-areas:
         "p1 p1 p2 p2 p2 p3 p3"
-        "p1 p1 p5 p5 p4 p4 p4"; /* grille template */
+        "p1 p1 p5 p4 p4 p4 p4"; /* grille template */
     }
     
     /* début disposition de la grille */
@@ -290,8 +290,6 @@ article{
     .p4 { 
         height: auto;
         grid-area: p4; 
-        overflow-y: scroll; /* scrollbar */
-        scrollbar-width: thin; /* scrollbar largeur */
         background-color: rgba(217, 217, 217, 1); /* couleur de fond */
         border-radius: 5%; /* angle de la bordure */
     }
@@ -301,6 +299,7 @@ article{
         grid-area: p5;
         border-radius: 5%; /* angle de la bordure */
     }
+
     /* fin disposition de la grille */
 }
 
