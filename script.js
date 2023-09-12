@@ -9,3 +9,10 @@ window.addEventListener("load", function() {
 document.getElementById("menu1").addEventListener("click", function() { 
     document.getElementById("pagehamburger").style.left = "0";
 });
+
+//Fermer le menu hamburger quand on clique autre part que sur le bouton
+document.addEventListener("click", function(event) {
+    if (!menu1.contains(event.target)) {// Le clic a été effectué en dehors de l'élément menu1
+        document.getElementById("pagehamburger").style.left = "-100%";
+    }
+});
