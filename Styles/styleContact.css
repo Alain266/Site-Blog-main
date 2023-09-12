@@ -102,7 +102,7 @@ nav{
     justify-content: center; /* centre les éléments en ligne */
     justify-content: space-around; /* modifie la disposition des éléments */
     background-color: #000000; /* couleur de fond */
-    height: 50px;
+    height: 50px; /* hauteur */
 }
 
 nav a{
@@ -115,7 +115,7 @@ nav a{
     font-size: 20px; /* taille de la police */
     background-color: rgba(255, 255, 255, 0.5); /* couleur de fond */
     border-radius: 20px; /* angle de la bordure */
-    width: 200px
+    width: 200px /* largeur */
 }
 
 main{
@@ -131,30 +131,55 @@ main p{
 }
 
 article{
-    height: 1763px; /* hauteur */
+    display: flex; /* affiche les éléments en ligne */
+    justify-content: center; /* centre les éléments en ligne */
+    flex-direction: column; /* affiche les éléments en colonne */
+    height: 700px; /* hauteur */
     background-color: rgba(0, 0, 0, 0.8); /* couleur de fond */
 }
 
-article div{
-    width: 100%; /* largeur */
-    height: 100%; /* hauteur */
+#contactform{
+    margin: auto;
+    padding: 50px; /* marge intérieure */
+    color: #FFFFFF; /* couleur du texte */
+    border-radius: 50px;
+}
+
+#contactform fieldset{
+    text-align: center; /* centre le texte */
+    max-width: 1000px; /* largeur */
 }
 
 #contactform input{
-  width: 100%;
+  width: 50%; /* largeur */
 }
 
 #titreform{
+    font-size: 20px; /* taille de la police */
     text-align: center; /* centre le texte */
     margin: auto; /* centre la div */
 }
 
+#message{
+    max-height: 100px; /* hauteur maximale */
+    width: 100%; /* largeur */
+    max-width: max-content; /* largeur maximale */
+    overflow-y: scroll; /* scrollbar */
+    scrollbar-color: #000000; /* scrollbar couleur */
+    scrollbar-width: thin; /* scrollbar largeur */
+}
+
 #buttonform{
-    width: 75px; /* largeur */
+    position: relative;
+    margin: auto;
+    margin-top: -25px;
+    margin-bottom: 50px;
+    width: 100px; /* largeur */
     height: 50px; /* hauteur */
     text-align: center; /* centre le texte */
-    margin: auto; /* centre la div */
     border-radius: 20px; /* angle de la bordure */
+    font-size: large;
+    font-weight: bold;
 }
 
 footer{
