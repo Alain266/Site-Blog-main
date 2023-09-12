@@ -1,34 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr"> <!-- Langage du site -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Site de location de vélo">
-    <meta name="keywords" content="location, vélo, location de vélo,">
-    <meta name="author" content="Alain">
-    <meta name="title" content="I-Bike">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/Styles/styleConnexion.css">
+    <meta charset="UTF-8"> <!-- Encodage du site -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Taille du site -->
+    <meta name="description" content="Site de location de vélo"> <!-- Description du site -->
+    <meta name="keywords" content="location, vélo, location de vélo,"> <!-- Mots-clefs du site -->
+    <meta name="author" content="Alain"> <!-- Auteur du site -->
+    <meta name="title" content="I-Bike"> <!-- Titre du site -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- Compatibilité avec les navigateurs -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Préchargement de Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Préchargement de Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> <!-- Police de caractères -->
+    <link rel="stylesheet" href="../Styles/styleConnexion.css"> <!-- Fichier CSS du site -->
     <script src="../script.js"></script> <!-- Fichier JavaScript du site -->
-    <title>I-Bike</title>
+    <title>I-Bike</title> <!-- Titre du site -->
 </head>
 <body>
     <div class="loading-overlay"> <!-- Overlay du chargement -->
         <div class="loading-image"></div> <!-- Image du chargement -->
     </div>
-    <header>
-        <h1>I-Bike</h1>
-        <nav>
-            <a href="../index.html">Accueil</a>
-            <a href="/Content/contact.html">Contact</a>
-            <a href="/Content/connexion.html">Connexion</a>
+    <header> <!-- Header du site -->
+        <h1>I-Bike <img class="logo" src="../Images/logo.png" alt="Logo de I-Bike"/> </h1> 
+        <nav> <!-- Navigation du site -->
+            <a href="../index.html">Accueil</a> 
+            <a href="../Content/contact.html">Contact</a> 
+            <a href="../Content/connexion.html">Connexion</a>
         </nav>
     </header>
-    <footer>
-        <p>Copyright &copy; 2023</p>
+    <main> <!-- Premiere partie du site -->
+        <p>CONNEXION 🌐</p>
+        <form id="contactform" action="formulaire.php" method="post"> <!-- Formulaire du site -->
+            <fieldset>
+                <label for="nom">Nom d'utilisateur :</label> <!-- Label du champ --> <br>
+                <input type="text" name="nom" id="nom" required> <!-- Champ du formulaire -->
+            </fieldset>
+            <fieldset>
+                <label for="password">Mot de passe :</label> <!-- Label du champ --> <br>
+                <input type="password" name="password" id="password" required> <!-- Champ du formulaire -->
+            </fieldset>
+        </form>
+        <button id ="buttonform" type="submit" form="contactform">Envoyer</button> <br>
+        <a href="../Content/motdepasseoublie.html">Mot de passe oublié ?</a> <br>
+        <a href="../Content/inscription.html">Créer un compte</a>
+    </main>
+    <footer> <!-- Footer du site -->
+        <p>Copyright &copy; 2023</p> <!-- Copyright -->
     </footer>
 </body>
 </html>
