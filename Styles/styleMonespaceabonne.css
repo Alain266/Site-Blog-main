@@ -143,7 +143,7 @@ display: flex; /* affiche les éléments en ligne */
     position:absolute; /* position fixe */
     margin: 0; /* retire les marges */
     top: 257px; /* tire vers le haut */
-    left: -100%; /* tire vers la gauche */
+    left: -1000%; /* tire vers la gauche */
     width: 100%; /* largeur */
     background-color: rgba(255, 255, 255, 0.2); /* couleur de fond */
     backdrop-filter: blur(10px); /* Effet de flou */
