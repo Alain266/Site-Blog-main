@@ -21,7 +21,7 @@
     margin: auto; /* centre le texte */
     width: 250px; /* largeur */
     height: 250px; /* hauteur */
-    background-image: url("/Images/logo.png"); /* Chemin vers votre image de chargement */
+    background-image: url("../Images/logo.png"); /* Chemin vers votre image de chargement */
     background-size: cover; /* Taille de l'image */
     animation: spin 2s linear infinite; /* Animation du chargement */
 }
@@ -36,6 +36,7 @@
 }
 
 body{
+    height: 100%;
     margin: 0; /* retire les marges */
     margin-bottom: 4em; /* marge intérieure du bas */
 }
@@ -46,9 +47,54 @@ header{
 
 header h1{
     margin: auto; /* centre le texte */
-    padding: 25px; /* marge intérieure */
+    padding: 60px; /* marge intérieure */
     text-align: center; /* centre le texte */
-    font-size: 50px; /* taille de la police */
+    font-size: 100px; /* taille de la police */
+font-weight: bold;
+}
+
+/* style si l'écran est plus petit que 1080px */
+@media screen and (max-width: 1080px) { 
+    header h1{
+        font-size: 70px; /* taille de la police */
+    }
+}
+
+/* Animation du logo pour écran de plus de 1080px */
+@keyframes tourLogo { 
+    0% {
+        transform: translateX(-2000%); /* position de départ de la boucle */
+    }
+    100% {
+        transform: translateX(2000%); /* position de fin */
+    }
+}
+
+/* Animation du logo pour écran de moins de 1080px */
+@keyframes tourLogo2 { 
+    0% {
+        transform: translateX(-1000%); /* position de départ de la boucle */
+    }
+    100% {
+        transform: translateX(400%); /* position de fin */
+    }
+}    
+
+.logo{
+    position: absolute; /* position fixe */
+    top: 155px; /* tire vers le haut */
+    height: 100px; /* hauteur */
+    width: 100px; /* largeur */
+    animation: tourLogo 15s linear infinite; /* animation */
+}
+
+/* style si l'écran est plus petit que 1080px */
+@media screen and (max-width: 1080px) { 
+    .logo{
+        animation: tourLogo2 8s linear infinite; /* animation */
+        position: absolute; /* position fixe */
+        top: 117px; /* tire vers le haut */
+    }
 }
 
 nav{
@@ -56,9 +102,77 @@ nav{
     justify-content: center; /* centre les éléments en ligne */
     justify-content: space-around; /* modifie la disposition des éléments */
     background-color: #000000; /* couleur de fond */
+height: 50px; /* hauteur */
 }
 
 nav a{
+display: flex; /* affiche les éléments en ligne */
+    justify-content: center; /* centre les éléments en ligne */
+    justify-content: space-around; /* modifie la disposition des éléments */
+    margin: auto; /* centre le texte */
+    text-decoration: none; /* retire le soulignement des liens */
+    color: #000000; /* couleur du texte */
+    font-size: 20px; /* taille de la police */
+    background-color: rgba(255, 255, 255, 0.5); /* couleur de fond */
+    border-radius: 20px; /* angle de la bordure */
+    width: 200px /* largeur */
+}
+
+/* style si l'écran est plus petit que 1080px */
+@media screen and (max-width: 1080px) { 
+    nav a{
+        display: none
+    }  
+}
+
+.menu{
+    position: absolute;
+    top: 208px;
+    right: 10%;
+    width: 45px;
+}
+
+/* style si l'écran est plus grand que 1080px */
+@media screen and (min-width: 1080px) { 
+    .menu{
+        display: none
+    }    
+}
+
+#pagehamburger{
+    position:absolute; /* position fixe */
+    margin: 0; /* retire les marges */
+    top: 257px; /* tire vers le haut */
+    left: -100%; /* tire vers la gauche */
+    width: 100%; /* largeur */
+    background-color: rgba(255, 255, 255, 0.2); /* couleur de fond */
+    backdrop-filter: blur(10px); /* Effet de flou */
+    z-index: 2; /* Assure que l'overlay est au-dessus du contenu */
+    border-radius: 5px; /* angle de la bordure */
+}
+
+/* style si l'écran est plus grand que 1080px */
+@media screen and (min-width: 1080px) { 
+    #pagehamburger{
+        display: none
+    }    
+}
+
+#menunav{
+    position: sticky; /* position fixe */
+    display: flex; /* affiche les éléments en ligne */
+    justify-content: center; /* centre les éléments en ligne */
+    flex-direction: column; /* disposition des éléments */
+    gap: 50px; /* marge intérieure */
+    font-size: 4em; /* taille de la police */
+    padding: 1em; /* marge intérieure */
+}
+
+#menunav li{
+    list-style: none; /* retire les puces */
+}
+
+#menunav a{
     text-decoration: none; /* retire le soulignement des liens */
     color: #FFFFFF; /* couleur du texte */
     font-size: 25px; /* taille de la police */

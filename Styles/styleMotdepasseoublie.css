@@ -36,6 +36,7 @@
 }
 
 body{
+height: 100%;
     margin: 0; /* retire les marges */
     margin-bottom: 4em; /* marge intérieure du bas */
 }
@@ -118,6 +119,69 @@ nav a{
     width: 200px /* largeur */
 }
 
+/* style si l'écran est plus petit que 1080px */
+@media screen and (max-width: 1080px) { 
+    nav a{
+        display: none
+    }  
+}
+
+.menu{
+    position: absolute;
+    top: 208px;
+    right: 10%;
+    width: 45px;
+}
+
+/* style si l'écran est plus grand que 1080px */
+@media screen and (min-width: 1080px) { 
+    .menu{
+        display: none
+    }    
+}
+
+#pagehamburger{
+    position:absolute; /* position fixe */
+    margin: 0; /* retire les marges */
+    top: 257px; /* tire vers le haut */
+    left: -100%; /* tire vers la gauche */
+    width: 100%; /* largeur */
+    background-color: rgba(255, 255, 255, 0.2); /* couleur de fond */
+    backdrop-filter: blur(10px); /* Effet de flou */
+    z-index: 2; /* Assure que l'overlay est au-dessus du contenu */
+    border-radius: 5px; /* angle de la bordure */
+}
+
+/* style si l'écran est plus grand que 1080px */
+@media screen and (min-width: 1080px) { 
+    #pagehamburger{
+        display: none
+    }    
+}
+
+#menunav{
+    position: sticky; /* position fixe */
+    display: flex; /* affiche les éléments en ligne */
+    justify-content: center; /* centre les éléments en ligne */
+    flex-direction: column; /* disposition des éléments */
+    gap: 50px; /* marge intérieure */
+    font-size: 4em; /* taille de la police */
+    padding: 1em; /* marge intérieure */
+}
+
+#menunav li{
+    list-style: none; /* retire les puces */
+}
+
+#menunav a{
+    text-decoration: none; /* retire le soulignement des liens */
+    color: #000000; /* couleur du texte */
+}
+
+#menunav a:hover{
+    color: rgba(14, 40, 177, 0.8); /* couleur du texte */
+}
+
 main{
     text-align: center; /* centre le texte */
     padding: 3em; /* marge intérieure */
@@ -143,6 +207,7 @@ article{
     margin: auto;
     padding: 50px; /* marge intérieure */
     color: #FFFFFF; /* couleur du texte */
+    border-radius: 50px;
 }
 
 #contactform fieldset{

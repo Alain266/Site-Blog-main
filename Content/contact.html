@@ -12,20 +12,28 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Préchargement de Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> <!-- Police de caractères -->
     <link rel="stylesheet" href="../Styles/styleContact.css"> <!-- Fichier CSS du site -->
-    <script src="../script.js"></script> <!-- Fichier JavaScript du site -->
+    <script src="../script.js" defer></script> <!-- Fichier JavaScript du site -->
     <title>I-Bike</title> <!-- Titre du site -->
 </head>
 <body>
     <div class="loading-overlay"> <!-- Overlay du chargement -->
         <div class="loading-image"></div> <!-- Image du chargement -->
     </div>
+<div id="pagehamburger">
+        <ul id="menunav">
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="../Content/contact.html">Contact</a></li>
+            <li><a href="../Content/connexion.html">Connexion</a></li>
+        </ul>
+    </div>
     <header> <!-- Header du site -->
-        <h1>I-Bike <img class="logo" src="../Images/logo.png" alt="Logo de I-Bike"/> </h1> 
-        <nav> <!-- Navigation du site -->
+        <h1>I-Bike <img class="logo" src="../Images/logo.png" alt="Logo de I-Bike"/> </h1> <!-- Logo du site -->
+        <nav> <!-- Navigation du site version pc -->
             <a href="../index.html">Accueil</a> 
             <a href="../Content/contact.html">Contact</a> 
             <a href="../Content/connexion.html">Connexion</a>
         </nav>
+<img id="menu1" class="menu" src="../Images/menu.png" alt="Menu"/> <!-- Navigation du site version mobile -->
     </header>
     <main> <!-- Premiere partie du site -->
         <p>Nous sommes ravis de vous entendre ! 😊 <br> <br>
