@@ -21,7 +21,7 @@
     margin: auto; /* centre le texte */
     width: 250px; /* largeur */
     height: 250px; /* hauteur */
-    background-image: url("/Images/logo.png"); /* Chemin vers votre image de chargement */
+    background-image: url("../Images/logo.png"); /* Chemin vers votre image de chargement */
     background-size: cover; /* Taille de l'image */
     animation: spin 2s linear infinite; /* Animation du chargement */
 }
@@ -39,16 +39,62 @@ body{
     margin: 0; /* retire les marges */
     margin-bottom: 4em; /* marge intérieure du bas */
 }
-
-header{
-    background-color: rgba(14, 40, 177, 0.8); /* couleur de fond */
+  
+header {
+    background-color: rgb(14, 40, 177, 0.8); /* couleur de fond */
+    background-size: 200% 100%; /* Taille de l'image */
 }
 
 header h1{
     margin: auto; /* centre le texte */
-    padding: 25px; /* marge intérieure */
+    padding: 60px; /* marge intérieure */
     text-align: center; /* centre le texte */
-    font-size: 50px; /* taille de la police */
+    font-size: 100px; /* taille de la police */
+    font-weight: bold;
+}
+
+/* style si l'écran est plus petit que 1080px */
+@media screen and (max-width: 1080px) { 
+    header h1{
+        font-size: 70px; /* taille de la police */
+    }
+}
+
+/* Animation du logo pour écran de plus de 1080px */
+@keyframes tourLogo { 
+    0% {
+        transform: translateX(-2000%); /* position de départ de la boucle */
+    }
+    100% {
+        transform: translateX(2000%); /* position de fin */
+    }
+}
+
+/* Animation du logo pour écran de moins de 1080px */
+@keyframes tourLogo2 { 
+    0% {
+        transform: translateX(-1000%); /* position de départ de la boucle */
+    }
+    100% {
+        transform: translateX(400%); /* position de fin */
+    }
+}    
+
+.logo{
+    position: absolute; /* position fixe */
+    top: 155px; /* tire vers le haut */
+    height: 100px; /* hauteur */
+    width: 100px; /* largeur */
+    animation: tourLogo 15s linear infinite; /* animation */
+}
+
+/* style si l'écran est plus petit que 1080px */
+@media screen and (max-width: 1080px) { 
+    .logo{
+        animation: tourLogo2 8s linear infinite; /* animation */
+        position: absolute; /* position fixe */
+        top: 117px; /* tire vers le haut */
+    }
 }
 
 nav{
@@ -56,24 +102,100 @@ nav{
     justify-content: center; /* centre les éléments en ligne */
     justify-content: space-around; /* modifie la disposition des éléments */
     background-color: #000000; /* couleur de fond */
+    height: 50px; /* hauteur */
 }
 
 nav a{
+    display: flex; /* affiche les éléments en ligne */
+    justify-content: center; /* centre les éléments en ligne */
+    justify-content: space-around; /* modifie la disposition des éléments */
+    margin: auto; /* centre le texte */
     text-decoration: none; /* retire le soulignement des liens */
+    color: #000000; /* couleur du texte */
+    font-size: 20px; /* taille de la police */
+    background-color: rgba(255, 255, 255, 0.5); /* couleur de fond */
+    border-radius: 20px; /* angle de la bordure */
+    width: 200px /* largeur */
+}
+
+main{
+    text-align: center; /* centre le texte */
+    padding: 3em; /* marge intérieure */
+    font-size: 20px; /* taille de la police */
+    background-color: rgba(14, 40, 177, 0.3); /* couleur de fond */
+    height: 900px;
+}
+
+main p{
+    margin: auto; /* centre le texte */
+    max-width: 1500px; /* largeur maximale */
+}
+
+article{
+    display: flex; /* affiche les éléments en ligne */
+    justify-content: center; /* centre les éléments en ligne */
+    flex-direction: column; /* affiche les éléments en colonne */
+    height: 700px; /* hauteur */
+    background-color: rgba(0, 0, 0, 0.8); /* couleur de fond */
+}
+
+#contactform{
+    margin: auto;
+    padding: 50px; /* marge intérieure */
     color: #FFFFFF; /* couleur du texte */
-    font-size: 25px; /* taille de la police */
+}
+
+#contactform fieldset{
+    margin: auto;
+    text-align: center; /* centre le texte */
+    max-width: 1000px; /* largeur */
+    background-color: rgba(0, 0, 0, 0.5); /* couleur de fond */
+}
+
+#contactform input{
+  width: 50%; /* largeur */
+}
+
+#titreform{
+    font-size: 20px; /* taille de la police */
+    text-align: center; /* centre le texte */
+    margin: auto; /* centre la div */
+}
+
+#message{
+    max-height: 100px; /* hauteur maximale */
+    width: 100%; /* largeur */
+    max-width: max-content; /* largeur maximale */
+    overflow-y: scroll; /* scrollbar */
+    scrollbar-color: #000000; /* scrollbar couleur */
+    scrollbar-width: thin; /* scrollbar largeur */
+}
+
+#buttonform{
+    position: relative;
+    margin: auto;
+    margin-top: -25px;
+    margin-bottom: 50px;
+    width: 100px; /* largeur */
+    height: 50px; /* hauteur */
+    text-align: center; /* centre le texte */
+    border-radius: 20px; /* angle de la bordure */
+    font-size: large;
+    font-weight: bold;
 }
 
 footer{
     position: fixed; /* position fixe */
     bottom: 0; /* retire le bas */
     left: 0; /* retire le gauche */
+    height: 4em; /* hauteur */
     width: 100%; /* largeur */
     background-color: rgba(0, 0, 0, 1); /* couleur de fond */
 }
 
 footer p{
+    width: 100%; /* largeur */
     text-align: center; /* centre le texte */
-    font-size: 20px; /* taille de la police */
+    font-size: 15px; /* taille de la police */
     color: #FFFFFF; /* couleur du texte */
 }
