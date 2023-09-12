@@ -41,7 +41,7 @@ body{
     margin: 0; /* retire les marges */
     margin-bottom: 4em; /* marge intérieure du bas */
 }
-  
+
 header {
     background-color: rgb(14, 40, 177, 0.8); /* couleur de fond */
     background-size: 200% 100%; /* Taille de l'image */
@@ -207,7 +207,7 @@ article{
     scrollbar-color: #000000; /* scrollbar couleur */
     scrollbar-width: thin; /* scrollbar largeur */
 }
-  
+
 .container{ 
     padding: 25px; /* marge intérieure */
     display: grid; /* grille */
@@ -216,10 +216,10 @@ article{
     gap: 25px 25px; /* marge intérieure */
     grid-auto-flow: row; /* disposition des éléments */
     grid-template-areas: 
-      "p1"
-      "p2"
-      "p3"
-      "p4"
+    "p1"
+    "p2"
+    "p3"
+    "p4"
       "p5"; /* grille template */
 }
 
@@ -247,7 +247,7 @@ article{
     border-radius: 10%; /* angle de la bordure */
     box-shadow: 0 0 10px #000000; /* effet de flou */
 }
-  
+
 .p2{
     height: 350px; /* hauteur */
     text-align: center; /* centre le texte */
@@ -266,7 +266,7 @@ article{
     border-radius: 5%; /* angle de la bordure */
     border: 2px solid #000000; /* bordure */
 }
-  
+
 .p3{
     height: 350px; /* hauteur */
     display: flex; /* affiche les éléments en ligne */
@@ -277,7 +277,7 @@ article{
     border-radius: 5%; /* angle de la bordure */
     box-shadow: 0 0 10px #000000; /* effet de flou */
 }
-  
+
 .p4{ 
     height: 350px; /* hauteur */
     text-align: center; /* centre le texte */
@@ -289,7 +289,7 @@ article{
     border-radius: 10%; /* angle de la bordure */
     box-shadow: 0 0 10px #000000; /* effet de flou */
 }
-  
+
 .p5{ 
     display: flex; /* affiche les éléments en ligne */
     justify-content: center; /* centre les éléments en ligne */
