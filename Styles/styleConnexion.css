@@ -187,7 +187,7 @@ main{
     padding: 3em; /* marge intérieure */
     font-size: 15px; /* taille de la police */
     background-color: rgba(14, 40, 177, 0.3); /* couleur de fond */
-    height: 900px;
+    height: max-content;
 }
 
 main p{
