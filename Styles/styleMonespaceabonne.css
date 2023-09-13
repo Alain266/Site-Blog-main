@@ -298,6 +298,14 @@ main p{
     }
 }
 
+#comptearebours{
+    margin: auto;
+    text-align: center;
+    margin: 0;
+    background-color: rgba(14, 40, 177, 0.3);
+    border-radius: 50px;
+}
+
 footer{
     position: fixed; /* position fixe */
     bottom: 0; /* retire le bas */
