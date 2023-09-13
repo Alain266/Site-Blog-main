@@ -166,8 +166,8 @@ nav a{
     justify-content: center; /* centre les éléments en ligne */
     flex-direction: column; /* disposition des éléments */
     gap: 50px; /* marge intérieure */
-    font-size: 4em; /* taille de la police */
-    padding: 1em; /* marge intérieure */
+    font-size: 2em; /* taille de la police */
+    padding: 2em; /* marge intérieure */
 }
 
 #menunav li{
@@ -186,7 +186,7 @@ nav a{
 main{
     text-align: center; /* centre le texte */
     padding: 3em; /* marge intérieure */
-    font-size: 20px; /* taille de la police */
+    font-size: 15px; /* taille de la police */
     background-color: rgba(14, 40, 177, 0.3); /* couleur de fond */
 }
 
@@ -232,7 +232,7 @@ article{
 }
 
 .p1 p, .p2 p, .p3 p, .p4 p, .p5 p{
-    font-size: 20px; /* taille de la police */
+    font-size: 15px; /* taille de la police */
 }
 
 /* début disposition de la grille */

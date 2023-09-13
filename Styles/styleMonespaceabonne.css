@@ -164,8 +164,8 @@ display: flex; /* affiche les éléments en ligne */
     justify-content: center; /* centre les éléments en ligne */
     flex-direction: column; /* disposition des éléments */
     gap: 50px; /* marge intérieure */
-    font-size: 4em; /* taille de la police */
-    padding: 1em; /* marge intérieure */
+    font-size: 2em; /* taille de la police */
+    padding: 2em; /* marge intérieure */
 }
 
 #menunav li{
@@ -175,7 +175,7 @@ display: flex; /* affiche les éléments en ligne */
 #menunav a{
     text-decoration: none; /* retire le soulignement des liens */
     color: #FFFFFF; /* couleur du texte */
-    font-size: 25px; /* taille de la police */
+    font-size: 20px; /* taille de la police */
 }
 
 footer{
@@ -188,6 +188,6 @@ footer{
 
 footer p{
     text-align: center; /* centre le texte */
-    font-size: 20px; /* taille de la police */
+    font-size: 15px; /* taille de la police */
     color: #FFFFFF; /* couleur du texte */
 }

@@ -165,8 +165,8 @@ nav a{
     justify-content: center; /* centre les éléments en ligne */
     flex-direction: column; /* disposition des éléments */
     gap: 50px; /* marge intérieure */
-    font-size: 4em; /* taille de la police */
-    padding: 1em; /* marge intérieure */
+    font-size: 2em; /* taille de la police */
+    padding: 2em; /* marge intérieure */
 }
 
 #menunav li{
@@ -185,7 +185,7 @@ nav a{
 main{
     text-align: center; /* centre le texte */
     padding: 3em; /* marge intérieure */
-    font-size: 20px; /* taille de la police */
+    font-size: 15px; /* taille de la police */
     background-color: rgba(14, 40, 177, 0.3); /* couleur de fond */
     height: 900px;
 }
@@ -221,12 +221,6 @@ article{
   width: 50%; /* largeur */
 }
 
-#titreform{
-    font-size: 20px; /* taille de la police */
-    text-align: center; /* centre le texte */
-    margin: auto; /* centre la div */
-}
-
 #message{
     max-height: 100px; /* hauteur maximale */
     width: 100%; /* largeur */
@@ -245,7 +239,7 @@ article{
     height: 50px; /* hauteur */
     text-align: center; /* centre le texte */
     border-radius: 20px; /* angle de la bordure */
-    font-size: large;
+    font-size: 20px;
     font-weight: bold;
 }
 
