@@ -217,9 +217,10 @@ main p{
     border-radius: 5px; /* angle de la bordure */
 }
 
-/* Next & previous buttons */
+/* Boutons pour les slides */
 .prev,
 .next {
+    display: none;
     cursor: pointer; /* pointeur */
     position: absolute; /* position fixe */
     top: 50%; /* tire vers le haut */
@@ -234,28 +235,13 @@ main p{
     user-select: none; /* retire l'effet de sélection */
 }
 
-/* Position the "next button" to the right */
-.next {
-    right: 0; /* tire vers la droite */
-    border-radius: 3px 0 0 3px; /* angle de la bordure */
-}
 
-/* On hover, add a black background color with a little bit see-through */
+/* Au survol, ajoute une couleur de fond noire avec un peu de transparence. */
 .prev:hover,
 .next:hover {
     background-color: rgba(0, 0, 0, 0.8); /* couleur de fond */
 }
 
-/* Caption text */
-.text {
-    color: #f2f2f2; /* couleur du texte */
-    font-size: 15px;  /* taille de la police */
-    padding: 8px 12px; /* marge intérieure */
-    position: absolute; /* position fixe */
-    bottom: 8px; /* tire vers le bas */
-    width: 100%; /* largeur */
-    text-align: center; /* centre le texte */
-}
 
 /* Number text (1/3 etc) */
 .numbertext {
