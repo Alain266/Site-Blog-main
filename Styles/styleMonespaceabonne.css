@@ -217,11 +217,6 @@ main p{
     border-radius: 5px; /* angle de la bordure */
 }
 
-/* Hide the images by default */
-.mySlides {
-    display: none; /* cache les images */
-}
-
 /* Next & previous buttons */
 .prev,
 .next {
