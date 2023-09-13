@@ -35,12 +35,24 @@
     }
 }
 
+/* effet d'ombre en haut de la page */
+body::before {
+    content: ""; /* contenu */
+    position: fixed; /* position fixe */
+    top: -10px; /* tire vers le haut */
+    left: 0; /* tire vers la gauche */
+    width: 100%; /* largeur */
+    height: 10px; /* hauteur */
+    box-shadow: 0px 0 15px rgba(0, 0, 0, 1); /* Effet d'ombre */
+    z-index: 100; /* Assure que l'overlay est au-dessus du contenu */
+}
+
 body{
 height: 100%;
     margin: 0; /* retire les marges */
     margin-bottom: 4em; /* marge intérieure du bas */
 }
-  
+
 header {
     background-color: rgb(14, 40, 177, 0.8); /* couleur de fond */
     background-size: 200% 100%; /* Taille de l'image */
