@@ -41,8 +41,9 @@ body{
     margin-bottom: 4em; /* marge intérieure du bas */
 }
 
-header{
-    background-color: rgba(14, 40, 177, 0.8); /* couleur de fond */
+header {
+    background-color: rgb(14, 40, 177, 0.8); /* couleur de fond */
+    background-size: 200% 100%; /* Taille de l'image */
 }
 
 header h1{
@@ -50,7 +51,7 @@ header h1{
     padding: 60px; /* marge intérieure */
     text-align: center; /* centre le texte */
     font-size: 100px; /* taille de la police */
-font-weight: bold;
+    font-weight: bold;
 }
 
 /* style si l'écran est plus petit que 1080px */
@@ -102,17 +103,17 @@ nav{
     justify-content: center; /* centre les éléments en ligne */
     justify-content: space-around; /* modifie la disposition des éléments */
     background-color: #000000; /* couleur de fond */
-height: 50px; /* hauteur */
+    height: 50px; /* hauteur */
 }
 
 nav a{
-display: flex; /* affiche les éléments en ligne */
+    display: flex; /* affiche les éléments en ligne */
     justify-content: center; /* centre les éléments en ligne */
     justify-content: space-around; /* modifie la disposition des éléments */
     margin: auto; /* centre le texte */
     text-decoration: none; /* retire le soulignement des liens */
     color: #000000; /* couleur du texte */
-    font-size: 20px; /* taille de la police */
+    font-size: 15px; /* taille de la police */
     background-color: rgba(255, 255, 255, 0.5); /* couleur de fond */
     border-radius: 20px; /* angle de la bordure */
     width: 200px /* largeur */
@@ -121,21 +122,21 @@ display: flex; /* affiche les éléments en ligne */
 /* style si l'écran est plus petit que 1080px */
 @media screen and (max-width: 1080px) { 
     nav a{
-        display: none
+        display: none /* affiche les éléments en ligne */
     }  
 }
 
 .menu{
-    position: absolute;
-    top: 208px;
-    right: 10%;
-    width: 45px;
+    position: absolute; /* position fixe */
+    top: 208px; /* tire vers le haut */
+    right: 10%; /* tire vers la droite */
+    width: 45px; /* largeur */
 }
 
 /* style si l'écran est plus grand que 1080px */
 @media screen and (min-width: 1080px) { 
-    .menu{
-        display: none
+    .menu{ 
+        display: none /* n'affiche pas les éléments */
     }    
 }
 
@@ -154,7 +155,7 @@ display: flex; /* affiche les éléments en ligne */
 /* style si l'écran est plus grand que 1080px */
 @media screen and (min-width: 1080px) { 
     #pagehamburger{
-        display: none
+        display: none /* n'affiche pas les éléments */
     }    
 }
 
@@ -174,19 +175,147 @@ display: flex; /* affiche les éléments en ligne */
 
 #menunav a{
     text-decoration: none; /* retire le soulignement des liens */
-    color: #FFFFFF; /* couleur du texte */
-    font-size: 20px; /* taille de la police */
+    color: #000000; /* couleur du texte */
+}
+
+#menunav a:hover{
+    color: rgba(14, 40, 177, 0.8); /* couleur du texte */
+}
+
+main{
+    text-align: left; /* centre le texte */
+    padding: 1em; /* marge intérieure */
+    font-size: 15px; /* taille de la police */
+    background-color: rgba(14, 40, 177, 0.3); /* couleur de fond */
+    height: max-content; /* hauteur */
+}
+
+main p{
+    text-align: center; /* centre le texte */
+    max-width: 1500px; /* largeur maximale */
+}
+
+@media screen and (min-width: 1080px) {
+    main{
+        text-align: center; /* centre le texte */
+    }  
+    * {
+        list-style: none; /* retire les puces */
+    }
+    main ul{
+        background-color: rgba(0, 0, 0, 0.3); /* couleur de fond */
+        border-radius: 500px; /* angle de la bordure */
+    }
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 250px; /* largeur maximale */
+    position: relative; /* position fixe */
+    margin: auto; /* centre le texte */
+    border: 5px solid rgba(14, 40, 177, 0.3); /* couleur de fond */
+    border-radius: 5px; /* angle de la bordure */
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none; /* cache les images */
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer; /* pointeur */
+    position: absolute; /* position fixe */
+    top: 50%; /* tire vers le haut */
+    width: auto; /* largeur */
+    margin-top: -22px; /* marge intérieure */
+    padding: 16px; /* marge intérieure */
+    color: white; /* couleur du texte */
+    font-weight: bold; /* taille de la police */ 
+    font-size: 18px; /* taille de la police */ 
+    transition: 0.6s ease; /* animation */
+    border-radius: 0 3px 3px 0; /* angle de la bordure */
+    user-select: none; /* retire l'effet de sélection */
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0; /* tire vers la droite */
+    border-radius: 3px 0 0 3px; /* angle de la bordure */
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* couleur de fond */
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2; /* couleur du texte */
+    font-size: 15px;  /* taille de la police */
+    padding: 8px 12px; /* marge intérieure */
+    position: absolute; /* position fixe */
+    bottom: 8px; /* tire vers le bas */
+    width: 100%; /* largeur */
+    text-align: center; /* centre le texte */
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2; /* couleur du texte */
+    font-size: 12px; /* taille de la police */
+    padding: 8px 12px; /* marge intérieure */
+    position: absolute; /* position fixe */
+    top: 0; /* tire vers le haut */
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer; /* pointeur */
+    height: 15px; /* hauteur */
+    width: 15px; /* largeur */
+    margin: 0 2px; /* marge intérieure */
+    background-color: #bbb; /* couleur de fond */
+    border-radius: 50%; /* angle de la bordure */
+    display: inline-block; /* affiche les éléments en ligne */
+    transition: background-color 0.6s ease; /* animation */
+}
+
+.active,
+.dot:hover {
+    background-color: #717171; /* couleur de fond */
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade; /* animation */
+    animation-duration: 1.5s; /* animation duration */
+}
+
+/* animation  */
+@keyframes fade {
+    from {
+        opacity: .4 
+    }
+
+    to {
+        opacity: 1
+    }
 }
 
 footer{
     position: fixed; /* position fixe */
     bottom: 0; /* retire le bas */
     left: 0; /* retire le gauche */
+    height: 4em; /* hauteur */
     width: 100%; /* largeur */
     background-color: rgba(0, 0, 0, 1); /* couleur de fond */
 }
 
 footer p{
+    width: 100%; /* largeur */
     text-align: center; /* centre le texte */
     font-size: 15px; /* taille de la police */
     color: #FFFFFF; /* couleur du texte */

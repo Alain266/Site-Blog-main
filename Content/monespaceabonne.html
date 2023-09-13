@@ -11,32 +11,88 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Préchargement de Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- Préchargement de Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> <!-- Police de caractères -->
-    <link rel="stylesheet" href="/Styles/styleMonespaceabonne.css"> <!-- Fichier CSS du site -->
-    <script src="../script.js"></script> <!-- Fichier JavaScript du site -->
+    <link rel="stylesheet" href="../Styles/styleMonespaceabonne.css"> <!-- Fichier CSS du site -->
+    <script src="../script.js" defer></script> <!-- Fichier JavaScript du site -->
     <title>I-Bike</title> <!-- Titre du site -->
 </head>
 <body>
     <div class="loading-overlay"> <!-- Overlay du chargement -->
         <div class="loading-image"></div> <!-- Image du chargement -->
     </div>
-    <div id="pagehamburger">
+<div id="pagehamburger">
         <ul id="menunav">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="Content/contact.html">Contact</a></li>
-        <li><a href="Content/connexion.html">Connexion</a></li>
+            <li><a href="../index.html">Accueil</a></li>
+            <li><a href="../Content/contact.html">Contact</a></li>
         </ul>
     </div>
     <header> <!-- Header du site -->
-        <h1>I-Bike <img class="logo" src="Images/logo.png" alt="Logo de I-Bike"/> </h1> <!-- Logo du site -->
+        <h1>I-Bike <img class="logo" src="../Images/logo.png" alt="Logo de I-Bike"/> </h1> <!-- Logo du site -->
         <nav> <!-- Navigation du site version pc -->
-            <a href="index.html">Accueil</a>
-            <a href="Content/contact.html">Contact</a>
-            <a href="Content/connexion.html">Connexion</a>
+            <a href="../index.html">Accueil</a> 
+            <a href="../Content/contact.html">Contact</a> 
         </nav>
-<img id="menu1" class="menu" src="Images/menu.png" alt="Menu"/> <!-- Navigation du site version mobile -->
+<img id="menu1" class="menu" src="../Images/menu.png" alt="Menu"/> <!-- Navigation du site version mobile -->
     </header>
-    <footer>
-        <p>Copyright &copy; 2023</p>
+    <main> <!-- Premiere partie du site -->
+        <p>MES INFOS 📑</p>
+        <ul id="infos">
+            <li>Nom complet : Alain</li> <br>
+            <li>Nom d'utilisateur : Alain266</li> <br>
+            <li>Adresse e-mail</li> <br>
+            <li>Mot de passe : ********</li> <br>
+            <li>Préférence des notifications : E-mail</li> <br>
+            <li>Abonnement à la newsletter : Oui</li> <br>
+            <li>Localisation : Toulouse, 31000</li> <br>
+            <li>Niveau d'expérience : Pro</li> <br>
+            <li>Type de cyclisme : VTT</li> <br>
+            <li>Date d'inscription : 09/09/2023</li> <br>
+            <li>Statut de l'abonnement : Premium</li> <br>
+            <li>Mes photos :</li>
+        </ul>
+        <!-- Slideshow container -->
+<div class="slideshow-container">
+
+<!-- Slideshow image de vélo -->
+<div class="mySlides fade">
+    <div class="numbertext">1 / 5</div>
+    <img src="../Images/Slideshow/pexels-elina-sazonova-1855349.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">2 / 5</div>
+    <img src="../Images/Slideshow/pexels-florencia-potter-351300.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">3 / 5</div>
+    <img src="../Images/Slideshow/pexels-hessel-geriet-3312791.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">4 / 5</div>
+    <img src="../Images/Slideshow/pexels-thomas-hobiger-3403293.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+    <div class="numbertext">5 / 5</div>
+    <img src="../Images/Slideshow/pexels-thái-nhàn-2789711.jpg" style="width:100%">
+</div>
+
+<!-- Boutons suivant et précédent -->
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+    </main>
+    <footer> <!-- Footer du site -->
+        <p>Copyright &copy; 2023</p> <!-- Copyright -->
     </footer>
 </body>
 </html>
